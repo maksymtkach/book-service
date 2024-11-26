@@ -29,8 +29,21 @@ The main purpose of this application is to provide an API for performing create 
 
 ## Project setup
 
+### Local setup
 ```bash
 $ npm install
+$ npm run start:prod
+
+```
+
+### Docker setup
+```bash
+$ docker-compose up --build
+```
+
+## API Testing
+```
+$ npm run test
 ```
 
 ## API Endpoints
