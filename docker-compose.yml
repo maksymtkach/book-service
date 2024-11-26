@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: book-service
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./books.db:/usr/src/app/books.db
+    environment:
+      - NODE_ENV=production
+    command: npm run start:prod

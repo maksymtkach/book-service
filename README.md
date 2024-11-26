@@ -31,3 +31,30 @@ The main purpose of this application is to provide an API for performing create 
 
 ```bash
 $ npm install
+```
+
+## API Endpoints
+
+### Swagger Documentation
+Swagger docs доступні за адресою:  
+**[http://localhost:3000/api](http://localhost:3000/api)**
+
+### API Операції:
+
+#### 1. **Додати книгу**
+- **Метод:** POST  
+- **URL:** [http://localhost:3000/books](http://localhost:3000/books)  
+- **Опис:** Використовується для додавання нової книги до бібліотеки.  
+- **Приклад JSON-запиту:**
+  ```json
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "publishedYear": 1925
+  }
+  ```
+
+#### 2. **Отримати список книг**
+- **Метод:** GET  
+- **URL:** [http://localhost:3000/books](http://localhost:3000/books)  
+- **Опис:** Використовується для отримання списку книг бібліотек.  
